@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HospitalManage" Class="HospitalManageDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=16S8WWJ8C9ADB41;Initial Catalog=HospitalManage;Integrated Security=True" SettingsObjectName="Entity.Properties.Settings" SettingsPropertyName="HospitalManageConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PatientDT" Member="PatientDT">
+    <Type Name="PatientDT">
+      <Column Name="patId" Type="System.String" DbType="NVarChar(80) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="patName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="patAge" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="patSex" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="patPlace" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="notPaid" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="patDocId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HospitalDT" Member="HospitalDT">
+    <Type Name="HospitalDT">
+      <Column Name="hosId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="hosName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="hosRoom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MedicineDT" Member="MedicineDT">
+    <Type Name="MedicineDT">
+      <Column Name="medId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="medName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="medPrice" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="medCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

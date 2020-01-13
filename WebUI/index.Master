@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="WebUI.index" %>
+
+<%@ Register Src="~/Controls/indexControl.ascx" TagPrefix="uc1" TagName="indexControl" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/mainStyle.css" rel="stylesheet" />
+    <link rel="Shortcut Icon" href="images/logo.ico" type="image/x-icon" />
+    <title>医院信息管理系统</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <uc1:indexControl runat="server" id="indexControl" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </form>
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#navBlack").change(function () {
+                $("#nav").removeClass("navbar-default");
+                $("#nav").addClass("navbar-inverse");
+            });
+            $("#navWhite").change(function () {
+                $("#nav").removeClass("navbar-inverse");
+                $("#nav").addClass("navbar-default");
+            });
+            $("#btnPrimary").change(function () {
+                $(".btn").removeClass("btn-default btn-success btn-info btn-warning btn-danger");
+                $(".btn").addClass("btn-primary");
+            });
+            $("#btnWhite").change(function () {
+                $(".btn").removeClass("btn-primary btn-success btn-info btn-warning btn-danger");
+                $(".btn").addClass("btn-default");
+            });
+            $("#btnSuccess").change(function () {
+                $(".btn").removeClass("btn-default btn-primary btn-info btn-warning btn-danger");
+                $(".btn").addClass("btn-success");
+            });
+            $("#btnInfo").change(function () {
+                $(".btn").removeClass("btn-default btn-success btn-primary btn-warning btn-danger");
+                $(".btn").addClass("btn-info");
+            });
+            $("#btnWarning").change(function () {
+                $(".btn").removeClass("btn-default btn-success btn-info btn-primary btn-danger");
+                $(".btn").addClass("btn-warning");
+            });
+            $("#btnDanger").change(function () {
+                $(".btn").removeClass("btn-default btn-success btn-info btn-warning btn-primary");
+                $(".btn").addClass("btn-danger");
+            });
+        });
+    </script>
+</body>
+</html>

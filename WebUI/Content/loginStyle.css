@@ -1,0 +1,23 @@
+﻿body {
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.login{
+    width: 500px;
+    height: 220px;
+    margin: 0 auto;
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 40px;
+}
+.input-group{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

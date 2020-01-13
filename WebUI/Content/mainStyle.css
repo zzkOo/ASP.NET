@@ -1,0 +1,73 @@
+﻿#form1{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.navbar{
+    border-radius: 0;
+}
+.dropdown-menu{
+    text-align: center;
+}
+.btn-group{
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+#setting{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.title{
+    font-size: 20px;
+}
+.radio{
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.patientinfo{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.form-group{
+    height: 34px;
+    line-height: 34px;
+}
+
+.row{
+    width: 800px;
+    margin: 0 auto;
+}
+.thumbnail img{
+    width: 150px;
+    height: 150px;
+}
+
+.pay{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.medical{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.order{
+    border: 2px solid red;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cenGV{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
